@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="cal.css" />
+     <link rel="stylesheet" type="text/css" media="screen" href="https://code.jquery.com/jquery-3.3.1.min.js" />
+
+          
+</head>
+<body><div id="container"><form name="frm">
+     
+    <input type="text" name="txt" id="screen">
+    <br><br>
+    <input type="button" name="btn9" class="btn" value="9" onclick="dis(btn9.value)">
+    <input type="button" name="btn8" class="btn" value="8" onclick="dis(btn8.value)">
+    <input type="button" name="btn7" class="btn" value="7" onclick="dis(btn7.value)">
+    <input type="button" name="btna" class="btn" value="+" onclick="dis(btna.value)">
+    <input type="button" name="btncos" class="btn blue" value="cos" onclick="dis2(txt.value)">
+    <br><br>
+    <input type="button" name="btn6" class="btn" value="6" onclick="dis(btn6.value)">
+    <input type="button" name="btn5" class="btn" value="5" onclick="dis(btn5.value)">
+    <input type="button" name="btn4" class="btn" value="4" onclick="dis(btn4.value)">
+    <input type="button" name="btns" class="btn" value="-" onclick="dis(btns.value)">
+    <input type="button" name="btnsin" class="btn green" value="sin" onclick="dis1(txt.value)">
+    <br><br>
+    <input type="button" name="btn3" class="btn" value="3" onclick="dis(btn3.value)">
+    <input type="button" name="btn2" class="btn" value="2" onclick="dis(btn2.value)">
+    <input type="button" name="btn1" class="btn" value="1" onclick="dis(btn1.value)">
+    <input type="button" name="btnm" class="btn" value="*" onclick="dis(btnm.value)">
+    <input type="button" name="btntan" class="btn red" value="tan" onclick="dis3(txt.value)">
+    <br><br>
+    <input type="button" name="btnd" class="btn" value="/" onclick="dis(btnd.value)">
+    <input type="button" name="btn0" class="btn" value="0" onclick="dis(btn0.value)">
+    <input type="button" name="btndot" class="btn" value="." onclick="dis(btndot.value)">
+    <input type="button" name="btneql" class="btn" value="=" id="ans" onclick="equ(txt.value)">
+    <input type="button" name="btnsqr" class="btn yellow" value="^2" onclick="dis4(txt.value)">
+    <br><br>
+    <input type="button" name="btndel" class="btn blue" value="C"  id="clear" onclick="txt.value=null">
+    <input type="button" name="btncqr" class="btn green" value="<=" onclick="back()"> 
+    <input type="button" name="btnsqr" class="btn red" value="√" onclick="dis6(txt.value)">
+    <input type="button" name="btncqr" class="btn yellow" value="3√" onclick="dis7(txt.value)">
+    <input type="button" name="btncqr" class="btn salmon" value="^3" onclick="dis5(txt.value)">
+</section></form>
+</div>
+  <div id="close">    <table id="history">
+
+              <tr><button id="history_btn">View History</button>
+                  
+              </tr>
+              
+              
+      </table>
+</div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
